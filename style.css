@@ -91,6 +91,7 @@ a {
 }
 .produkt img {
   width: 65%;
+  height: 100%;
 }
 .produkt > div {
   display: flex;

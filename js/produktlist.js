@@ -1,9 +1,10 @@
-fetch("https://kea-alt-del.dk/t7/api/products?limit=100")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=100&")
   .then((res) => res.json())
   .then(showProducts);
 
 function showProducts(products) {
   //looper og kalder showProduct
+  console.log(products);
   products.forEach(showProduct);
 }
 
@@ -30,6 +31,8 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("sale");
     copy.querySelector(".discount").classList.remove("hide");
   }
+
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
 
   //append
   document.querySelector("main").appendChild(copy);
