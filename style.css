@@ -208,14 +208,27 @@ footer {
 }
 
 #buy {
-  width: 100px;
+  width: 200px;
   height: 30px;
   background-color: var(--yellow);
   border: none;
   border-radius: 5px;
   color: var(--dark-grey);
-  margin-top: 10%;
+  margin-top: 1rem;
 }
 #buy:hover {
   background-color: var(--light-grey);
+}
+
+select {
+  width: 100px;
+  background-color: var(--light-grey);
+  color: var(--white);
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.brandname,
+.description_header {
+  padding: 1rem 0 0.5rem 0;
 }

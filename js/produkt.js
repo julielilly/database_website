@@ -10,23 +10,8 @@ function showProduct(product) {
   document.querySelector(".bredcrumb_id").textContent = product.productdisplayname;
   document.querySelector(".price span").textContent = product.price;
   document.querySelector(".basecolour").textContent = product.basecolour;
+  document.querySelector(".brandname").textContent = product.brandname;
+  document.querySelector(".brandbio").textContent = product.brandbio;
+  document.querySelector(".gender").textContent = product.gender;
+  document.querySelector(".description").textContent = product.description;
 }
-
-/*  <div>
-                <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
-                <div class="price">895,00 kr</div>
-                <div class="color">
-                    <p>Color:</p>
-                    <p>Blue</p>
-                </div>
-                <div class="size">
-                    <label for="customer">Size:</label>
-                    <div class="size_answer">
-                        <select name="customer" id="customer" required>
-                            <option value="">Choose</option>
-                            <option value="small">S</option>
-                            <option value="medium">M</option>
-                            <option value="large">L</option>
-                        </select>
-                    </div>
-                </div> */
