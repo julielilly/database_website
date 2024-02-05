@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktliste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="logo" href="index.html">ApparelA</a></li>
+                <li><a href="produktliste.html">Accessories</a></li>
+                <li><a href="produktliste.html">Apperal</a></li>
+                <li><a href="produktliste.html">Footwear</a></li>
+                <li><a href="produktliste.html">Free Items</a></li>
+                <li><a href="produktliste.html">Personal Care</a></li>
+                <li><a href="produktliste.html">Sporting Goods</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <header>
+        <ul class="bredcrumb">
+            <li><a href="index.html">Home</a></li>
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+            <li><a href="kategori.html">Categories</a></li>
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+            <li>Apparel</li>
+        </ul>
+
+        <h1>Apparel</h1>
+    </header>
+    <main id="produktliste">
+
+        <template id="small_product_template">
+            <article class="card_content">
+                <a class="discount hide" href="produkt.html">50%</a>
+                <a class="notinstock hide" href="produkt.html">Sold out</a>
+                <a class="produktliste_img" href="produkt.html"><img
+                        src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
+                </a>
+                <a class="produktliste_text" href="produkt.html">
+                    <p>Sahara Team India Fanwear Round Neck Jersey</p>
+                    <p class="price"> <span class="amount"></span>,00 kr</p>
+                </a>
+            </article>
+        </template>
+
+        <!--
+        <article class="card_content soldout">
+            <a href="produkt.html">Sold out</a><img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+                alt="blue fanwear jersey">
+
+            <a class="produktliste_img" href="produkt.html">
+
+            </a>
+            <a class="produktliste_text" href="produkt.html">
+                <p>Sahara Team India Fanwear Round Neck Jersey</p>
+                <p class="price">895,00 kr</p>
+            </a>
+        </article>
+
+        <article class="card_content sale">
+            <a href="produkt.html">50%</a>
+            <a class="produktliste_img" href="produkt.html"><img
+                    src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
+            </a>
+            <a class="produktliste_text" href="produkt.html">
+                <p>Sahara Team India Fanwear Round Neck Jersey</p>
+                <p class="price">445,00 kr</p>
+            </a>
+        </article>
+
+        <article class="card_content">
+            <a class="produktliste_img" href="produkt.html"><img
+                    src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
+            </a>
+            <a class="produktliste_text" href="produkt.html">
+                <p>Sahara Team India Fanwear Round Neck Jersey</p>
+                <p>895,00 kr</p>
+            </a>
+        </article>
+        <article class="card_content">
+            <a class="produktliste_img" href="produkt.html"><img
+                    src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
+            </a>
+            <a class="produktliste_text" href="produkt.html">
+                <p>Sahara Team India Fanwear Round Neck Jersey</p>
+                <p>895,00 kr</p>
+            </a>
+        </article>
+        <article class="card_content">
+            <a class="produktliste_img" href="produkt.html"><img
+                    src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
+            </a>
+            <a class="produktliste_text" href="produkt.html">
+                <p>Sahara Team India Fanwear Round Neck Jersey</p>
+                <p>895,00 kr</p>
+            </a>
+        </article>
+-->
+
+    </main>
+
+    <footer>
+        <div></div>
+    </footer>
+
+    <script src="produktlist.js"></script>
+</body>
+
+</html>
