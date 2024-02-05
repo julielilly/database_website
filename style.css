@@ -72,19 +72,8 @@ a {
   padding: 2%;
 }
 
-.produktliste_text {
-  display: flex;
-  flex-direction: column;
-  gap: 100%;
-}
-
-.price {
-  justify-content: end;
-}
-
-#produktliste_img {
-  display: block;
-  position: relative;
+.produktliste_text .name {
+  min-height: 3rem;
 }
 
 #produktliste {
