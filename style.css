@@ -171,7 +171,7 @@ header:nth-of-type(2) {
 
 header:first-of-type {
   gap: 5%;
-  padding: 2% 2%;
+  padding-top: 2%;
 }
 nav ul {
   display: flex;
@@ -179,13 +179,13 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   gap: 3%;
-  padding: 5px;
+  padding: 1% 0;
   margin: auto;
   width: 60%;
 }
 
 a {
-  color: var(--dark-grey);
+  color: var(--grey);
 }
 a:hover {
   color: var(--light-grey);
@@ -202,11 +202,6 @@ nav ul li + li a:hover {
   color: var(--yellow);
   font-size: 2rem;
 }
-
-footer {
-  height: 2rem;
-}
-
 #buy {
   width: 200px;
   height: 30px;

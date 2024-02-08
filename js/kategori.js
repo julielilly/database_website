@@ -36,18 +36,8 @@ function showCategory(category) {
   }
 
   //ændre URL
-  copy.querySelector(".read-more").setAttribute("href", `produktliste.html?category=${category.category}`);
+  copy.querySelectorAll(".read-more").forEach((elem) => elem.setAttribute("href", `produktliste.html?category=${category.category}`));
 
   //append
   document.querySelector("main").appendChild(copy);
 }
-
-/*<article class="card_content">
-                <a class="kategori_img read-more" href="produktliste.html"><img
-                        src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
-                </a>
-                <a class="kategori_text" href="produktliste.html">
-                    <p>Accessories</p>
-                </a>
-            </article>
-            */

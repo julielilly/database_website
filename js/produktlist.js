@@ -62,36 +62,8 @@ function showProduct(product) {
     copy.querySelector(".discount").classList.remove("hide");
   }
 
-  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelectorAll(".read-more").forEach((elem) => elem.setAttribute("href", `produkt.html?id=${product.id}`));
 
   //append
   document.querySelector("main").appendChild(copy);
 }
-
-/* 
-<ul class="bredcrumb">
-            <li><a href="index.html">Home</a></li>
-            <span class="material-symbols-outlined">
-                chevron_right
-            </span>
-            <li><a href="kategori.html">Categories</a></li>
-            <span class="material-symbols-outlined">
-                chevron_right
-            </span>
-            <li>Apparel</li>
-        </ul>
-
-        <h1>Apparel</h1>
-
-
-<article class="card_content">
-                <a class="discount hide" href="produkt.html">50%</a>
-                <a class="notinstock hide" href="produkt.html">Sold out</a>
-                <a class="produktliste_img read-more" href="produkt.html"><img
-                        src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="blue fanwear jersey">
-                </a>
-                <a class="produktliste_text" href="produkt.html">
-                    <p class="name">Sahara Team India Fanwear Round Neck Jersey</p>
-                    <p class="price"> <span class="amount"></span>,00 kr</p>
-                </a>
-            </article> */
