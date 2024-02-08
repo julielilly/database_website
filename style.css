@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
   background-color: var(--white);
 }
 
@@ -37,19 +40,23 @@ a {
   text-decoration: none;
 }
 
-.card_content {
+.card_content,
+.card_content img,
+.kategori_text p,
+.soldout > a:nth-of-type(2) {
   width: 100%;
+}
+
+.card_content {
   margin: 5% 5% 0 5%;
   position: relative;
 }
 
 .card_content img {
-  width: 100%;
   object-fit: cover;
 }
 
 .kategori_text p {
-  width: 100%;
   text-align: center;
   background-color: var(--grey);
   color: var(--white);
@@ -61,13 +68,12 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5%;
-  padding: 5% 5% 10rem 5%;
+  margin: 2rem auto 2rem auto;
 }
 
 .produktliste_text p {
   width: 100%;
   text-align: center;
-  background-color: var(--white);
   color: var(--dark-grey);
   padding: 2%;
 }
@@ -137,7 +143,6 @@ header:nth-of-type(2) {
   position: absolute;
   top: 239px;
   right: 0;
-  width: 100%;
 }
 
 .sale > a:first-of-type {
@@ -150,9 +155,6 @@ header:nth-of-type(2) {
 }
 .sale .price {
   color: #d33f49 !important;
-}
-.soldout .price {
-  color: var(--light-grey) !important;
 }
 
 @media (min-width: 900px) {
@@ -170,30 +172,31 @@ header:nth-of-type(2) {
 }
 
 header:first-of-type {
-  gap: 5%;
   padding-top: 2%;
 }
 nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 3%;
-  padding: 1% 0;
+  justify-content: space-around;
+  gap: 80%;
   margin: auto;
-  width: 60%;
+  padding: 0.5rem 5rem;
+  width: 75%;
+  border-bottom: solid var(--dark-grey) 2px;
 }
 
 a {
   color: var(--grey);
 }
-a:hover {
-  color: var(--light-grey);
-}
+
 nav ul li + li {
   font-weight: 600;
   text-transform: uppercase;
 }
+nav ul li + li a:hover,
+a:hover,
+.soldout .price,
 nav ul li + li a:hover {
   color: var(--light-grey);
 }
@@ -202,6 +205,7 @@ nav ul li + li a:hover {
   color: var(--yellow);
   font-size: 2rem;
 }
+
 #buy {
   width: 200px;
   height: 30px;
@@ -211,13 +215,13 @@ nav ul li + li a:hover {
   color: var(--dark-grey);
   margin-top: 1rem;
 }
-#buy:hover {
+#buy:hover,
+select {
   background-color: var(--light-grey);
 }
 
 select {
   width: 100px;
-  background-color: var(--light-grey);
   color: var(--white);
   padding: 0.2rem;
   border-radius: 5px;
@@ -226,4 +230,11 @@ select {
 .brandname,
 .description_header {
   padding: 1rem 0 0.5rem 0;
+}
+
+footer p {
+  padding: 0 5% 3rem 65%;
+}
+footer p a {
+  color: var(--red);
 }
